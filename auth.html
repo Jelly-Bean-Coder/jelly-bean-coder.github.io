@@ -6,14 +6,18 @@
   <form>
     <label for="pswrd"></label>
     <input type="password" id="pswrd" placeholder="Password...">
-    <button onclick="CheckAuth()">Submit</button>
+    <button type="button" onclick="CheckAuth()">Submit</button>
   </form>
   <script>
-    required_pswrd = "IDK YET"
+    required_password = "IDK YET"
     pswrd=document.getElementById("pswrd")
     function CheckAuth(){
-      if (pswrd==required_password) {
-        window.location.replace("destination.html");
+      if (pswrd.value==required_password) {
+        window.location.replace("congrats.html");
+      }
+
+      else {
+        alert("ACCESS DENIED")
       }
     }
   </script>
