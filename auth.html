@@ -9,14 +9,14 @@
   <div class="form">
     <label for="pswrd"></label>
     <input type="password" id="pswrd" placeholder="Password...">
-    <button type="button" onclick="CheckAuth()">Submit</button>
+    <button id="input-button" type="button" onclick="CheckAuth()">Submit</button>
   </div>
-  <p> Your hint: What insturment do you play?</p>
+  <button id="hint" other type="button" onclick="alert('HINT: WHAT CLASS DO YOU SHARE WITH THE GUY WHO LIKES YOU. IF IT WAS AN OPTION, SAY ITS NAME, IF IT WAS OPTION A, SAY ENVIRONMENTAL STUDIES, IF IT WAS OPTION B, SAY BAND, ETC.')">HINT</button>
   <script>
-    required_password = "IDK YET"
-    pswrd=document.getElementById("pswrd")
+    required_password = "band";
+    pswrd=document.getElementById("pswrd");
     function CheckAuth(){
-      if (pswrd.value==required_password) {
+      if (pswrd.value.toLocaleLowerCase()==required_password) {
         window.location.replace("congrats.html");
       }
 
