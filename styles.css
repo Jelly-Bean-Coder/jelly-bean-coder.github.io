@@ -16,7 +16,7 @@
       padding: 0px;
     }
 
-    button {
+    #input-button {
       border-radius: 0 8px 8px 0;
       background: #28a745;
       color: white;
@@ -33,7 +33,7 @@
 
     }
 
-    button, input {
+    #input-button, input {
       box-sizing: border-box;
       margin: 0;
       display: inline-block;
@@ -43,4 +43,17 @@
       line-height: normal;
       border: none;
       float: left;
+    }
+
+    hint {
+        border-radius: 8px;
+        box-sizing: border-box;
+          margin: 0;
+          display: inline-block;
+          padding: 10px;
+          vertical-align: top;
+          height: 48px;
+          line-height: normal;
+          border: none;
+          float: left;
     }
